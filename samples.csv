@@ -1,0 +1,4 @@
+Sp_hs	hs_rep1	1M_READS_sample/Sp.hs.1M.left.fq	1M_READS_sample/Sp.hs.1M.right.fq
+Sp_log	log_rep1	1M_READS_sample/Sp.log.1M.left.fq	1M_READS_sample/Sp.log.1M.right.fq
+Sp_ds	ds_rep1	1M_READS_sample/Sp.ds.1M.left.fq	1M_READS_sample/Sp.ds.1M.right.fq
+Sp_plat	plat_rep1	1M_READS_sample/Sp.plat.1M.left.fq	1M_READS_sample/Sp.plat.1M.right.fq
