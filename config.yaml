@@ -1,0 +1,36 @@
+
+SAMPLES: samples.csv
+
+EXTRA_PARAMS:
+ ###############################################################################################################
+  trinity: "--seqType fq --SS_lib_type RF --trimmomatic"
+ # --seqType <string>			: type of reads: (fa, or fq)
+ # --SS_lib_type <string>		: Strand-specific RNA-Seq read orientation.
+ # 								  if paired: RF or FR,
+ # 								  if single: F or R. (dUTP method = RF)
+ # --min_contig_length <int>	: minimum assembled contig length to report (def=200)
+ # --genome_guided_bam <string>	: genome guided mode, provide path to coordinate-sorted bam file.
+ # 								  (see genome-guided param section under --show_full_usage_info)
+ # --trimmomatic				: run Trimmomatic to quality trim reads
+ # 								  see '--quality_trimming_params' under full usage info for tailored settings.
+ # --full_cleanup				: only retain the Trinity fasta file, rename as ${output_dir}.Trinity.fasta 
+ #
+ ###############################################################################################################
+  fastqc: ""
+ # -f --format     Bypasses the normal sequence file format detection and
+ #                 forces the program to use the specified format.  Valid
+ #                 formats are bam,sam,bam_mapped,sam_mapped and fastq
+ # -c              Specifies a non-default file which contains the list of
+ # --contaminants  contaminants to screen overrepresented sequences against.
+ #                 The file must contain sets of named contaminants in the
+ #                 form name[tab]sequence.  Lines prefixed with a hash will
+ #                 be ignored.
+ # -a              Specifies a non-default file which contains the list of
+ # --adapters      adapter sequences which will be explicity searched against
+ #                 the library. The file must contain sets of named adapters
+ #                 in the form name[tab]sequence.  Lines prefixed with a hash
+ #                 will be ignored.
+ # -q --quiet      Supress all progress messages on stdout and only report errors.
+ #
+ ###############################################################################################################
+ 
